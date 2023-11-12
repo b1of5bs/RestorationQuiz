@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Restoration Quiz</title>        
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> <!-- Favicon-->        
+        <link href="css/styles.css" rel="stylesheet" /> <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/restoration.css" rel="stylesheet" />
+    </head>
+    <body>       
+        <div class="center">
+            <h1>The Ongoing Restoration Quiz</h1>
+            <div id="question"></div>
+            <form id="startForm"> <!--temporary form to ask user how many questions they want, disappears once answered-->
+                <label for="questions">How many questions do you want to answer? Select up to 40</label>
+                <br>
+                <br>
+                <center>
+                <input type="number" id="questions" min="1" max="40">
+                <br>
+                <input type="submit" value="Start Quiz" id="startQuiz">
+                </center>
+            </form>            
+            <div>
+                <div class="option-container hidden"> 
+                    <input type="radio" name="answer" value="1">
+                    <span id="option1" class="option"></span>
+                </div>
+            
+                <div class="option-container hidden"> 
+                    <input type="radio" name="answer" value="2">
+                    <span id="option2" class="option"></span>
+                </div>
+            
+                <div class="option-container hidden"> 
+                    <input type="radio" name="answer" value="3">
+                    <span id="option3" class="option"></span>
+                </div>
+            
+                <div class="option-container hidden"> 
+                    <input type="radio" name="answer" value="4">
+                    <span id="option4" class="option"></span>
+                </div>
+            </div>                
+            <button id="nextButton" class="quiz-button">Next</button> <!--moves user to next question-->
+            <br>
+            <button id="restartQuiz" class="quiz-button">Restart Quiz</button> <!--restarts entire quiz-->
+        </div>        
+        <script src="js/restoration.js"></script> <!--javascript file-->        
+    </body>
+</html>
